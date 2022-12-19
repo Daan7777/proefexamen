@@ -9,5 +9,5 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
-</body>
+<body>
 <!-- Navbar comes here -->
