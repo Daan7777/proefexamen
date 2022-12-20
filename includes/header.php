@@ -32,10 +32,10 @@
     <img src="logo.png" alt="Logo">
   </div>
     <nav class="navMenu">
-      <a href="#">Home</a>
-      <a href="#">Blog</a>
-      <a href="#">Work</a>
-      <a href="#">About</a>
+      <a href="#">File</a>
+      <a href="#">View</a>
+      <a href="#">Account</a>
+      <a href="#">Inloggen</a>
       <div class="dot"></div>
 </div>
     </nav>
