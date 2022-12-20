@@ -10,4 +10,5 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <?php include "conn.php" ?>
 <!-- Navbar comes here -->
