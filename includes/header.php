@@ -15,6 +15,7 @@
 <nav>
   <ul>
     <div class="language js-language-picker">
+        
   <form action="" class="language-picker__form">
     <select name="language-picker-select" id="language-picker-select">
       <option lang="de" value="deutsch">Deutsch</option>
@@ -25,7 +26,11 @@
     </select>
   </form>
 </div>
+
 <div class="nav">
+<div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
     <nav class="navMenu">
       <a href="#">Home</a>
       <a href="#">Blog</a>
