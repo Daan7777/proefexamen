@@ -9,7 +9,7 @@ if (mysqli_connect_errno()) {
 }
 
 // Connection was successful
-echo 'Connected to the database!';
+echo '';
 
 // Close the connection
 mysqli_close($connection);
