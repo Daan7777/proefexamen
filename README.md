@@ -1,4 +1,16 @@
-De klant wil een website waar bedrijven vacatures op kunnen zetten. De werknemers kunnen op de website naar vacatures zoeken, ook in het buitenland.
-De mensen die de website bezoeken moeten ook kunnen discussiëren met elkaar via een chat. Al wordt er niet aan de regels gehouden kunnen de bezoeker verwijderd worden.
+Afspraken 
 
-Werkzoekenden kunnen een cv inclusief video plaatsen op de website.
+    Visual studio code (editor) 
+    HTML, CSS, PHP, javascript, mysql (talen) 
+    Word, Github (documentatie) 
+    Discord (comminucatie)  
+    Comments code in het Engels, vanwege makkelijker op kunnen zoeken op internet. 
+    Bestand/map namen zonder hoofdletters. 
+
+Code 
+
+    Al het code wordt in het Engels geschreven.  
+    Probeer voor elk deel een comment te schrijven. 
+    Camel case variables. Voorbeeld: someVariable 
+    CSS schrijven in blokken van pagina’s. Scheiden met comments. 
+    Content class op elke pagina. Pas hier ook niet iets aan voor één pagina. 
