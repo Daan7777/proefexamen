@@ -42,6 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* Start of stylesheet */
 
 /* Navbar  */
@@ -60,7 +61,6 @@ table {
   left: 70%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
 }
 
 .navMenu a {
@@ -154,5 +154,12 @@ table {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	
   }
+  
+/* Welcome page */
+.welcomeMessage {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
