@@ -1,7 +1,10 @@
 <?php
 
-// Connect to the database
-$connection = mysqli_connect('localhost', 'root', '');
+// Localhost database connection
+$connection = mysqli_connect('localhost', 'root', '', 'agencyxxl');
+
+// Server database connection
+//S$connection = mysqli_connect('20.229.0.9', 'examgroup420A', 'examgroup420A!!', 'agencyxxl')
 
 // Check if the connection was successful
 if (mysqli_connect_errno()) {
@@ -9,7 +12,7 @@ if (mysqli_connect_errno()) {
 }
 
 // Connection was successful
-echo 'Connected to the database!';
+//echo 'Connected to the database!';
 
 // Close the connection
 mysqli_close($connection);

@@ -43,3 +43,10 @@ table {
 	border-spacing: 0;
 }
 /* Start of stylesheet */
+
+/* Welcome page */
+.welcomeMessage {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
