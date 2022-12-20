@@ -50,9 +50,10 @@ table {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(147, 147, 147);
+    background-color:rgb(137, 147, 156);
 	color: #fff;
 	padding: 2%;
+	border-bottom: 2px solid black;
 }
 
 .navMenu {
@@ -69,8 +70,7 @@ table {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 500;
-  display: inline-block;
-  width: 80px;
+  width: 100px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -160,12 +160,12 @@ table {
 	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%;
-	padding: 5%;
-	background-color: rgb(147, 147, 147);
+	background-color: rgb(210, 210, 210);
+	height: 77vh;
 }
 /* Welcome page */
 .welcomeMessage {
-	
+	padding: 5%;
 }
 
 .welcomeMessage h1 {
