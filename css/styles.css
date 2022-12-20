@@ -172,3 +172,35 @@ table {
 	font-size: 200%;
 }
 
+/* Footer */
+div.footer {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+div.overfooter {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+h1.footerheader{
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+div.footerbox {
+    background-color:rgb(137, 147, 156);
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+    margin-left:5px;
+    margin-right: 5px;
+    flex:1;
+	min-height: 100%;
+}
