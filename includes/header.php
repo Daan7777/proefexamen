@@ -29,7 +29,7 @@
 
 <div class="nav">
 <div class="logo">
-    <img src="logo.png" alt="Logo">
+    <img src="./images/logo.png" alt="Logo">
   </div>
     <nav class="navMenu">
       <a href="#">Home</a>
