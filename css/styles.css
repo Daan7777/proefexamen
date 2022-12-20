@@ -155,11 +155,20 @@ table {
 	height: 50px;
 	width: 80px;
   }
-  
+/* Content div */
+.content {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 5%;
+	background-color: rgb(147, 147, 147);
+}
 /* Welcome page */
 .welcomeMessage {
-	width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
+	
+}
+
+.welcomeMessage h1 {
+	font-size: 200%;
 }
 
