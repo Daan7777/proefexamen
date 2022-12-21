@@ -8,10 +8,10 @@
   <title>Facature zoeken</title>
   <link rel="stylesheet" href="./css/styles.css">
   <script src="./js/script.js"></script>
+
 </head>
 
 <body>
-  <?php include "conn.php" ?>
   <!-- Navbar comes here -->
   <div class="nav">
     <div class="logo">
