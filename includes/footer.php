@@ -11,9 +11,9 @@
         </div>
         <div class="footerbox">
             <ul>
-            <h1 class="footerheader">Company</h1>
-            <li>AgencyXXL</li>
-            <li>blahblah blah</li>
+                <h1 class="footerheader">Company</h1>
+                <li>AgencyXXL</li>
+                <li>blahblah blah</li>
             </ul>
         </div>
         <div class="footerbox">
@@ -25,3 +25,5 @@
         </div>
     </div>
 </div>
+
+</html>
