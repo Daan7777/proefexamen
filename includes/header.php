@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Facature zoeken</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/script.js"></script>
 </head>
 
 <body>
