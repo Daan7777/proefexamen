@@ -1,4 +1,5 @@
-<? include "includes/header.php"; ?>
+<?php include "includes/header.php"; ?>
+
 <div class="content">
     <!-- Page content -->
     <div class="welcomeMessage">
@@ -17,4 +18,5 @@
             anim id est laborum.</p>
     </div>
 </div>
+
 <?php include "includes/footer.php" ?>
