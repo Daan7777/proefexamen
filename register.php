@@ -5,12 +5,14 @@
 <div class="content">
 <form action="process-form.php" method="post">
   <label for="companyNameRadio">Bedrijfsnaam toevoegen?</label>
-  <input type="radio" name="companyNameRadio" id="companyNameRadio" value="enabled">Ja
-  <input type="radio" name="companyNameRadio" id="companyNameRadio" value="disabled" checked>Nee
+  <br/>
+  <input type="checkbox" onclick="boxChecked()" name="companyNameCheckbox" id="companyNameCheckbox">
   <br>
-  <label for="companyName">Bedrijfsnaam</label>
-  <input type="text" name="companyName" id="companyName">
   <br>
+  <div id="companyChecked">
+    <label for="companyName">Bedrijfsnaam</label>
+    <input type="text" name="companyName" id="companyName">
+  </div>
   <label for="firstName">Voornaam</label>
   <input type="text" name="firstName" id="firstName" required>
   <br>
@@ -52,7 +54,7 @@
 
 </div>
 </body>
- <?php /* include "includes/footer.php" */ ?>   
+ <?php include "includes/footer.php" ?>   
 </html>
 
 
