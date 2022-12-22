@@ -7,31 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Facature zoeken</title>
   <link rel="stylesheet" href="./css/styles.css">
+<<<<<<< HEAD
+=======
+
+>>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
 </head>
 
 <body>
-  <?php include "conn.php" ?>
   <!-- Navbar comes here -->
   <div class="nav">
-    <div class="logo">
-      <img src="./images/logo.png" alt="Logo">
-    </div>
-    <div class="language js-language-picker">
-      <form action="" class="language-picker__form">
-        <select name="language-picker-select" id="language-picker-select">
-          <option lang="de" value="deutsch">Deutsch</option>
-          <option lang="en" value="english" selected>English</option>
-          <option lang="fr" value="francais">Français</option>
-          <option lang="it" value="italiano">Italiano</option>
-          <!-- other language options -->
-        </select>
-      </form>
-    </div>
-    <div class="navMenu">
-      <a href="#">File</a>
-      <a href="#">View</a>
-      <a href="#">Account</a>
-      <a href="#">Inloggen</a>
-      <div class="dot"></div>
-    </div>
+    <ul>
+
+      <li><a href="login.php">Inloggen</a></li>
+      <li><a href="account.php">Account</a></li>
+      <li><a href="#">Overzicht</a></li>
+      <li><a href="#">Bestand</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Taal</a>
+        <div class="dropdown-content">
+          <a href="#" style="text-align:left;">Duits</a>
+          <a href="#" style="text-align:left;">Engels</a>
+          <a href="#" style="text-align:left;">Frans</a>
+          <a href="#" style="text-align:left;">Nederlands</a>
+        </div>
+      </li>
+      <li style="float:left;">
+        <div class="logo">
+          <a href="./index.php">
+            <img src="./images/logo.png" alt="Logo">
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>

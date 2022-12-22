@@ -1,21 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 dec 2022 om 11:27
--- Serverversie: 10.4.22-MariaDB
--- PHP-versie: 8.1.2
+-- Gegenereerd op: 21 dec 2022 om 14:40
+-- Serverversie: 10.4.24-MariaDB
+-- PHP-versie: 8.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `agencyxxl`
@@ -28,21 +22,29 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `companyacc` (
-  `id` int(5) NOT NULL,
-  `companyName` varchar(50) NOT NULL,
-  `firstName` varchar(50) NOT NULL,
-  `middleName` varchar(50) NOT NULL,
-  `lastName` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `phone` int(15) NOT NULL,
-  `adres1` varchar(50) NOT NULL,
-  `adres2` varchar(50) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `province` varchar(50) NOT NULL,
-  `zipCode` varchar(50) NOT NULL,
-  `country` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `id` int(11) NOT NULL,
+  `companyName` varchar(255) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `middleName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNumber` varchar(255) NOT NULL,
+  `address1` varchar(255) NOT NULL,
+  `address2` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `zipCode` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `companyacc`
+--
+
+INSERT INTO `companyacc` (`id`, `companyName`, `firstName`, `middleName`, `lastName`, `email`, `phoneNumber`, `address1`, `address2`, `city`, `state`, `zipCode`, `country`, `password`) VALUES
+(21, 'test', 'Daniël', '', 'van Montfoort', 'Detvanmontfoort@gmail.com', '+31624764996', 'Jolstraat 8', '', 'DEN HELDER', 'Select a state', '1784NK', 'Nederland', '$2y$10$huHSwVlt9vsejOObz1lO0uR85akYKKk4cfdXsF0d7DQXF3wf1gURC'),
+(22, 'test', 'Daniël', '', 'van Montfoort', '1Detvanmontfoort@gmail.com', '+31624764996', 'Jolstraat 8', '', 'DEN HELDER', 'Select a state', '1784NK', 'Nederland', '$2y$10$G6aTdhRAZm9Sh/qiYeqzqeBR.w5S4Kv5lw0uRznM6xZrr9YlqQIQu');
 
 -- --------------------------------------------------------
 
@@ -51,21 +53,27 @@ CREATE TABLE `companyacc` (
 --
 
 CREATE TABLE `privateacc` (
-  `id` int(5) NOT NULL,
-  `firstName` varchar(50) NOT NULL,
-  `middleName` varchar(50) NOT NULL,
-  `lastName` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `phone` int(15) NOT NULL,
-  `adres1` varchar(50) NOT NULL,
-  `adres2` varchar(50) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `province` varchar(50) NOT NULL,
-  `zipCode` varchar(50) NOT NULL,
-  `country` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `admin` tinyint(1) NOT NULL
+  `id` int(11) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `middleName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNumber` varchar(255) NOT NULL,
+  `address1` varchar(255) NOT NULL,
+  `address2` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `zipCode` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `privateacc`
+--
+
+INSERT INTO `privateacc` (`id`, `firstName`, `middleName`, `lastName`, `email`, `phoneNumber`, `address1`, `address2`, `city`, `state`, `zipCode`, `country`, `password`) VALUES
+(6, 'Daniël', '', 'van Montfoort', 'Detvanmontfoort@gmail.com', '+31624764996', 'Jolstraat 8', '', 'DEN HELDER', 'Select a state', '1784NK', 'Nederland', '$2y$10$cChyS8XDcvsTCSdHVOo6XujIS.H6kOG41QM3FrfZbsl98wdbl/EqK');
 
 -- --------------------------------------------------------
 
@@ -105,13 +113,15 @@ CREATE TABLE `vacancy` (
 -- Indexen voor tabel `companyacc`
 --
 ALTER TABLE `companyacc`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexen voor tabel `privateacc`
 --
 ALTER TABLE `privateacc`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexen voor tabel `resume`
@@ -133,13 +143,13 @@ ALTER TABLE `vacancy`
 -- AUTO_INCREMENT voor een tabel `companyacc`
 --
 ALTER TABLE `companyacc`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT voor een tabel `privateacc`
 --
 ALTER TABLE `privateacc`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT voor een tabel `resume`
@@ -153,7 +163,3 @@ ALTER TABLE `resume`
 ALTER TABLE `vacancy`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
