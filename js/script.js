@@ -1,3 +1,26 @@
+
+//scroll function for footer//
+    var $window = $(window);
+    var $box = $("#overfooter");
+
+    $window.scroll(function() {
+        var scrollTop = $window.scrollTop();
+    
+        if (scrollTop >= 200) {
+        $box.css("position","relative")
+        }else if (scrollTop <= 900)
+        $box.css("position","fixed")
+    });
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          myFooter.style.position = "fixed";
+        } else {
+          myFooter.style.position = "relative";
+        }
+      }
+
+
 // Checkbox button
 function boxChecked() {
     var checkBox = document.getElementById("companyNameCheckbox");
@@ -19,10 +42,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-    myFooter.style.position = "fixed";
   } else {
     mybutton.style.display = "none";
-    myFooter.style.position = "relative";
   }
 }
 

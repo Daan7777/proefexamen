@@ -152,8 +152,7 @@ html {
 	margin-left: 20%;
 	margin-right: 20%;
 	background-color: rgb(210, 210, 210);
-	height: 100vh;
-	font-size: 125%;
+	height: 200vh;
 }
  /* Register page */
  .content #companyChecked {
@@ -198,9 +197,9 @@ div.footer {
     justify-content: space-evenly;
 }
 
-div.overfooter {
+#overfooter {
     bottom: 0;
-    position: fixed;
+    position: fixed ;
     width: 100%;
     padding-bottom: 20px;
     margin-bottom: -10px;
@@ -225,6 +224,20 @@ div.footerbox {
 	min-height: 100%;
 }
 
+
+/* Admin page */
+div.bodyadmin{
+	height: 200vh;
+}
+
+table.striped{
+	width: 150vh;
+}
+
+td.tdheader{
+	font-size: larger;
+}
+
 /* account pagina */
 .edit {
 	position: relative;
@@ -233,3 +246,4 @@ div.footerbox {
 	padding-right: 0%;
 	border: 3px solid #73AD21;
 }
+
