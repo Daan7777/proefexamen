@@ -19,7 +19,7 @@
         <div class="footerbox">
             <ul>
                 <h1 class="footerheader">Links</h1>
-                <li>link1</li>
+                <li><a href="algemenevoorwaarden.php">algemenevoorwaarden</a></li>
                 <li>link2</li>
             </ul>
         </div>
