@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 dec 2022 om 11:27
+-- Gegenereerd op: 22 dec 2022 om 14:33
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 8.1.2
 
@@ -24,48 +24,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `companyacc`
+-- Tabelstructuur voor tabel `accounts`
 --
 
-CREATE TABLE `companyacc` (
-  `id` int(5) NOT NULL,
+CREATE TABLE `accounts` (
+  `id` int(11) NOT NULL,
+  `isCompany` tinyint(1) NOT NULL,
   `companyName` varchar(50) NOT NULL,
   `firstName` varchar(50) NOT NULL,
   `middleName` varchar(50) NOT NULL,
   `lastName` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `phone` int(15) NOT NULL,
+  `phone` varchar(50) NOT NULL,
   `adres1` varchar(50) NOT NULL,
   `adres2` varchar(50) NOT NULL,
   `city` varchar(50) NOT NULL,
-  `province` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
   `zipCode` varchar(50) NOT NULL,
   `country` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `privateacc`
---
-
-CREATE TABLE `privateacc` (
-  `id` int(5) NOT NULL,
-  `firstName` varchar(50) NOT NULL,
-  `middleName` varchar(50) NOT NULL,
-  `lastName` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `phone` int(15) NOT NULL,
-  `adres1` varchar(50) NOT NULL,
-  `adres2` varchar(50) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `province` varchar(50) NOT NULL,
-  `zipCode` varchar(50) NOT NULL,
-  `country` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `accounts`
+--
+
+INSERT INTO `accounts` (`id`, `isCompany`, `companyName`, `firstName`, `middleName`, `lastName`, `email`, `phone`, `adres1`, `adres2`, `city`, `state`, `zipCode`, `country`, `password`, `admin`) VALUES
+(4, 0, '', 'Jeremy', '', 'Beukema', 'jeremy-beukema@hotmail.com', '0652179085', 'Westerlanderweg 52', '', 'Westerland', 'Noord Holland', '1777 KL', 'Nederland', '$2y$10$LzhR69TwCYY1lo7ihFwxTOUVefAY2JgJsEgi8BJiA6p', 0),
+(5, 0, '', 'Jeremy', '', 'Beukema', 'jeremybeukema@hotmail.com', '0652179085', 'Westerlanderweg 52', '', 'Westerland', 'Noord Holland', '1777 KL', 'Nederland', '$2y$10$7s2IjxbupN92ti5PUHNnzeOFFrd44tcesq/omUWa7vL', 0);
 
 -- --------------------------------------------------------
 
@@ -102,15 +89,9 @@ CREATE TABLE `vacancy` (
 --
 
 --
--- Indexen voor tabel `companyacc`
+-- Indexen voor tabel `accounts`
 --
-ALTER TABLE `companyacc`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexen voor tabel `privateacc`
---
-ALTER TABLE `privateacc`
+ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -130,16 +111,10 @@ ALTER TABLE `vacancy`
 --
 
 --
--- AUTO_INCREMENT voor een tabel `companyacc`
+-- AUTO_INCREMENT voor een tabel `accounts`
 --
-ALTER TABLE `companyacc`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT voor een tabel `privateacc`
---
-ALTER TABLE `privateacc`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `accounts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT voor een tabel `resume`

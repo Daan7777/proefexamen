@@ -11,17 +11,19 @@
         </div>
         <div class="footerbox">
             <ul>
-            <h1 class="footerheader">Company</h1>
-            <li>AgencyXXL</li>
-            <li>blahblah blah</li>
+                <h1 class="footerheader">Company</h1>
+                <li>AgencyXXL</li>
+                <li>blahblah blah</li>
             </ul>
         </div>
         <div class="footerbox">
             <ul>
                 <h1 class="footerheader">Links</h1>
-                <li>link1</li>
-                <li>link2</li>
+                <li><a href="algemenevoorwaarden.php">algemenevoorwaarden</a></li>
+                <li><a href="voorlichting.php">voorlichting</a></li>
             </ul>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>
