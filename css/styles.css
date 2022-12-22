@@ -165,6 +165,29 @@ html {
 	font-size: 200%;
 }
 
+/* Error page */
+.errorMessage {
+	padding: 5%;
+}
+
+.errorMessage > h1 {
+	font-size: 200%;
+}
+
+.errorMessage li a {
+	background-color: slategrey;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: larger;
+	padding: 7px 8px;
+	text-decoration: none;
+}
+  
+.errorMessage li a:hover {
+	background-color: rgb(34, 176, 126);
+}
+
 /* Footer */
 div.footer {
     display:flex;
