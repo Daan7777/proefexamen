@@ -20,7 +20,7 @@
             <ul>
                 <h1 class="footerheader">Links</h1>
                 <li><a href="algemenevoorwaarden.php">algemenevoorwaarden</a></li>
-                <li>link2</li>
+                <li><a href="voorlichting.php">voorlichting</a></li>
             </ul>
         </div>
     </div>
