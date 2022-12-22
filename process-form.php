@@ -1,5 +1,6 @@
 <?php
  include "includes/conn.php";
+ 
 // Get the form data
 $companyName = $_POST['companyName'];
 $companyNameRadio = $_POST['companyNameRadio'];
@@ -19,20 +20,22 @@ $password = $_POST['password'];
 // Hash the password
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-// Connect to the database
-$conn = new mysqli('localhost', 'root', '', 'agencyxxl');
-
 // Check if the email is unique
-$query = "SELECT id FROM companyacc WHERE email = ?";
-$query = "SELECT id FROM privateacc WHERE email = ?";
+if ($companyNameRadio == 1) {
+  $query = "SELECT id FROM companyacc WHERE email = ?";
+} else {
+  $query = "SELECT id FROM privateacc WHERE email = ?";
+}
 
 $stmt = $conn->prepare($query);
 $stmt->bind_param('s', $email);
 $stmt->execute();
 $result = $stmt->get_result();
 if ($result->num_rows > 0) {
-  // First go to error page then to register again !!!!!!!!!!!!!!!!!!!!!!1
-  header("Location: something.php");
+  // Go to error page if email exists
+  session_start();
+  $_SESSION['error'] = "Email bestaat al.";
+  header("Location: error.php");
 } else {
   // Insert the user into the database
   if ($companyNameRadio == 'enabled') {
