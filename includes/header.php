@@ -7,13 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Facature zoeken</title>
   <link rel="stylesheet" href="./css/styles.css">
-<<<<<<< HEAD
-=======
-
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
 </head>
 
 <body>
+  <?php include "includes/conn.php" ?>
   <!-- Navbar comes here -->
   <div class="nav">
     <ul>

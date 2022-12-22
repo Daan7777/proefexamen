@@ -152,12 +152,7 @@ html {
 	margin-left: 20%;
 	margin-right: 20%;
 	background-color: rgb(210, 210, 210);
-<<<<<<< HEAD
 	height: 200vh;
-=======
-	height: 100vh;
-	font-size: 125%;
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
 }
 
 /* Welcome page */
@@ -177,11 +172,7 @@ div.footer {
 
 #overfooter {
     bottom: 0;
-<<<<<<< HEAD
-    position: absolute ;
-=======
-    position: fixed;
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
+    position: fixed ;
     width: 100%;
     padding-bottom: 20px;
     margin-bottom: -10px;
@@ -204,4 +195,17 @@ div.footerbox {
     margin-right: 5px;
     flex:1;
 	min-height: 100%;
+}
+
+/* Admin page */
+div.bodyadmin{
+	height: 200vh;
+}
+
+table.striped{
+	width: 150vh;
+}
+
+td.tdheader{
+	font-size: larger;
 }

@@ -1,8 +1,4 @@
 <?php include "includes/header.php"; ?>
-<<<<<<< HEAD
-=======
-
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
 <div class="content">
     <!-- Page content -->
     <!-- Back to top button -->
@@ -24,9 +20,4 @@
             anim id est laborum.</p>
     </div>
 </div>
-<<<<<<< HEAD
 <?php include "includes/footer.php" ?>
-=======
-
-<?php include "includes/footer.php" ?>
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f

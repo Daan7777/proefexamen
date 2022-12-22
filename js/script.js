@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //scroll function for footer//
     var $window = $(window);
     var $box = $("#overfooter");
@@ -13,7 +12,6 @@
     });
 
 
-=======
 // Footer
 myFooter = document.getElementById("overfooter");
 
@@ -36,4 +34,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
->>>>>>> d09ccd4acc34a5298ec5510fb256e16d4bca025f
