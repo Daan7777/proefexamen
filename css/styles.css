@@ -138,8 +138,8 @@ html {
 }
 
 .logo img {
-	height: 100px;
-	width: 160px;
+	height: 125px;
+	width: 125px;
 	position: absolute;
 	background-color: rgb(34, 176, 126);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
@@ -154,6 +154,10 @@ html {
 	background-color: rgb(210, 210, 210);
 	height: 200vh;
 }
+ /* Register page */
+ .content #companyChecked {
+	display: none;
+ }
 
 /* Welcome page */
 .welcomeMessage {
@@ -162,6 +166,29 @@ html {
 
 .welcomeMessage h1 {
 	font-size: 200%;
+}
+
+/* Error page */
+.errorMessage {
+	padding: 5%;
+}
+
+.errorMessage > h1 {
+	font-size: 200%;
+}
+
+.errorMessage li a {
+	background-color: slategrey;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: larger;
+	padding: 7px 8px;
+	text-decoration: none;
+}
+  
+.errorMessage li a:hover {
+	background-color: rgb(34, 176, 126);
 }
 
 /* Footer */
@@ -197,6 +224,7 @@ div.footerbox {
 	min-height: 100%;
 }
 
+
 /* Admin page */
 div.bodyadmin{
 	height: 200vh;
@@ -209,3 +237,13 @@ table.striped{
 td.tdheader{
 	font-size: larger;
 }
+
+/* account pagina */
+.edit {
+	position: relative;
+	top: 40%;
+	left: 1%;
+	padding-right: 0%;
+	border: 3px solid #73AD21;
+}
+

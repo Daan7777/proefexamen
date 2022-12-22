@@ -19,8 +19,11 @@
         <div class="footerbox">
             <ul>
                 <h1 class="footerheader">Links</h1>
+
                 <li><a href="https://facebook.com">Facebook pagina</a></li>
                 <li><a href="https://instagram.com">Instagram pagina</a></li>
+                <li><a href="algemenevoorwaarden.php">algemenevoorwaarden</a></li>
+                <li><a href="voorlichting.php">voorlichting</a></li>
             </ul>
         </div>
     </div>
