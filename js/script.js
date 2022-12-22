@@ -1,3 +1,13 @@
+// Checkbox button
+function boxChecked() {
+    var checkBox = document.getElementById("companyNameCheckbox");
+        if (checkBox.checked == true){
+            companyChecked.style.display = "block";
+        } else {
+            companyChecked.style.display = "none";
+        }
+}
+
 // Footer
 myFooter = document.getElementById("overfooter");
 
