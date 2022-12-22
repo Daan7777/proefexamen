@@ -15,8 +15,8 @@
   <div class="nav">
     <ul>
 
-      <li><a href="#">Inloggen</a></li>
-      <li><a href="#">Account</a></li>
+      <li><a href="login.php">Inloggen</a></li>
+      <li><a href="account.php">Account</a></li>
       <li><a href="#">Overzicht</a></li>
       <li><a href="#">Bestand</a></li>
       <li class="dropdown">
