@@ -19,8 +19,8 @@
         <div class="footerbox">
             <ul>
                 <h1 class="footerheader">Links</h1>
+                <li><a href="voorlichting.php">Informatie</a></li>
                 <li><a href="algemenevoorwaarden.php">algemenevoorwaarden</a></li>
-                <li>link2</li>
             </ul>
         </div>
     </div>
